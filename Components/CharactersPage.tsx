@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useState } from 'react';
 
 interface Character {
@@ -103,7 +104,7 @@ const CharactersPage = ({ initialCharacters }: CharactersPageProps) => {
               key={character.id}
               className='bg-gray-800 p-6 rounded-xl shadow-lg'
             >
-              <img
+              <Image
                 src={character.image}
                 alt={character.name}
                 width={200}
